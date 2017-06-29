@@ -1,0 +1,31 @@
+{
+  "name": "fixed-round",
+  "version": "0.0.1",
+  "description": "Math.round with fixed, formats a number using fixed-point notation and returns a number.",
+  "main": "index.js",
+  "scripts": {
+    "test-travis": "nyc npm test && nyc report --reporter=lcov",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TCharts/fixed-round.git"
+  },
+  "keywords": [
+    "round",
+    "toFixed",
+    "fixed-round"
+  ],
+  "author": "ProtoTeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TCharts/fixed-round/issues"
+  },
+  "homepage": "https://github.com/TCharts/fixed-round#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "expect": "^1.14.0",
+    "mocha": "^2.4.5",
+    "nyc": "^5.6.0"
+  }
+}
