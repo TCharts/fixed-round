@@ -15,6 +15,8 @@ describe('fixed-round', function() {
     expect(round(125.6, 0)).toBe(126);
     expect(round(125.4, 0)).toBe(125);
     expect(round(125.6, null)).toBe(126);
+    expect(round(125.6, '')).toBe(126);
+    expect(round(125.6)).toBe(126);
     expect(round(125.4, null)).toBe(125);
     expect(round(125.6, undefined)).toBe(126);
     expect(round(125.4, undefined)).toBe(125);
@@ -28,7 +30,9 @@ describe('fixed-round', function() {
   });
 
   it('4. exception', function() {
-    expect(round.bind(this, '')).toThrow('Parameters should be type of number!')
-    expect(round.bind(123, '')).toThrow('Parameters should be type of number!');
+    expect(round.bind(null, 'hello', 2)).toThrow('Parameters should be type of number!');
+    expect(round.bind(null, 123, '2')).toThrow('Parameters should be type of number!');
+    expect(round.bind(null, 123, 1.1)).toThrow('Parameter `fixed` should be an integer!');
+    expect(round.bind(null, 123, -1.1)).toThrow('Parameter `fixed` should be an integer!');
   });
 });
