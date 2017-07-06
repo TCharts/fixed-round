@@ -2,7 +2,7 @@
 
 > Math.round with fixed, formats a number using fixed-point notation and returns a number.
 
-[![Build Status](https://travis-ci.org/TCharts/fixed-round.svg?branch=master)](https://travis-ci.org/TCharts/fixed-round) [![Coverage Status](https://coveralls.io/repos/github/TCharts/fixed-round/badge.svg)](https://coveralls.io/github/TCharts/fixed-round)
+[![Build Status](https://travis-ci.org/TCharts/fixed-round.svg?branch=master)](https://travis-ci.org/TCharts/fixed-round) [![Coverage Status](https://coveralls.io/repos/github/TCharts/fixed-round/badge.svg)](https://coveralls.io/github/TCharts/fixed-round) [![npm](https://img.shields.io/npm/v/fixed-round.svg)](https://www.npmjs.com/package/fixed-round) [![npm download](https://img.shields.io/npm/dm/fixed-round.svg)](https://www.npmjs.com/package/fixed-round)
 
 
 ## Usage
