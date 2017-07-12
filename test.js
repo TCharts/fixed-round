@@ -35,4 +35,11 @@ describe('fixed-round', function() {
     expect(round.bind(null, 123, 1.1)).toThrow('Parameter `fixed` should be an integer!');
     expect(round.bind(null, 123, -1.1)).toThrow('Parameter `fixed` should be an integer!');
   });
+
+  it('5. random', function() {
+    for (var i = 0; i < 10000; i += 1) {
+      var r = Math.random();
+      expect((round(r, 2) + '').length).toBeLessThanOrEqualTo(4);
+    }
+  });
 });
