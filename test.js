@@ -30,10 +30,10 @@ describe('fixed-round', function() {
   });
 
   it('4. exception', function() {
-    expect(round.bind(null, 'hello', 2)).toThrow('Parameters should be type of number!');
-    expect(round.bind(null, 123, '2')).toThrow('Parameters should be type of number!');
-    expect(round.bind(null, 123, 1.1)).toThrow('Parameter `fixed` should be an integer!');
-    expect(round.bind(null, 123, -1.1)).toThrow('Parameter `fixed` should be an integer!');
+    expect(isNaN(round('hello', 2))).toBe(true);
+    expect(round(123.456, '2')).toBe(123.46);
+    expect(round(123.456, -2)).toBe(100);
+    expect(round(123.456, -1)).toBe(120);
   });
 
   it('5. random', function() {

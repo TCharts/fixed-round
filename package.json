@@ -1,6 +1,6 @@
 {
   "name": "fixed-round",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Math.round with fixed, formats a number using fixed-point notation and returns a number.",
   "main": "index.js",
   "scripts": {
