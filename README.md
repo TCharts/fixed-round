@@ -22,5 +22,5 @@ round(125.34567, -1); // 130
 
 ## License
 
-ISC@[ProtoTeam](https://github.com/ProtoTeam).
+ISC@[hustcc](https://github.com/hustcc).
 
